@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* header starts */
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 0 30px;
+    height: 8vh;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 38px;
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    width: 180px;
+    margin: 15px;
+}
+
+#header-logo p {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#header-logo p:hover {
+    color: goldenrod;
+    transition: 0.5s ease;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+i.fa {
+    color: white;
+    margin-left: 30px;
+}
+
+nav li a:hover {
+    color: goldenrod;
+    transition: 0.5s ease;
+}
+
+#home1 #content1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 29px;
+    width: 15vw;
+    background-color: white;
+    border: 2px solid orange;
+    color: black;
+    top: 5vw;
+    left: 5vw;
+    font-size: 1rem;
+}
+
+#content1 i {
+    font-size: 2rem;
+    color: orange;
+    margin: 15px;
+}
+
+#exp {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 4fr;
+    gap: 50px;
+    margin: 11vw 10px;
+
+}
+
+#exp .small div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: orange;
+    height: 9vw;
+    width: 9vw;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 100%;
+    background-color: white;
+    margin: 20px;
+}
+
+#exp .small p {
+    margin: 20px;
+    font-size: 2rem;
+    color: grey;
+}
+
+
+
+.button1 {
+    border-radius: 30px;
+    background-color: goldenrod;
+    padding: 0px 30px;
+    color: white;
+    height: 4vh;
+    margin: 30px;
+}
+
+.button2 {
+    border-radius: 30px;
+    background-color: goldenrod;
+    box-shadow: 0 0px 1px 0 goldenrod, 0 3px 27px 0 goldenrod;
+    padding: 0px 30px;
+    color: white;
+    height: 6vh
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+/* header ends */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.home .content h3 span {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: goldenrod
+}
+
+.home .content p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: grey;
+
+
+}
+
+.home img {
+    border-radius: 70%;
+    height: 30%;
+    width: 30%;
+    margin-left: 340px;
+
+}
+
+.home2 {
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+}
+
+.home2 .content2 {
+    max-width: 60rem;
+}
+
+.home2 .content2 h3 {
+    font-size: 3rem;
+    color: grey;
+}
+
+.home2 .content2 h3 span {
+    font-size: 4rem;
+    color: goldenrod
+}
+
+.home2 .content2 p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: grey;
+
+
+}
+
+.home2 img {
+    border-radius: 10%;
+    height: 50%;
+    width: 50%;
+    margin-left: 250px;
+
+}
+
+.home3 {
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+}
+
+.home3 .content3 {
+    max-width: 60rem;
+}
+
+.home3 .content3 h3 {
+    font-size: 3rem;
+    color: grey;
+}
+
+.home3 .content3 h3 span {
+    font-size: 4rem;
+    color: goldenrod
+}
+
+.home3 .content3 p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: grey;
+
+
+}
+
+.home3 img {
+    border-radius: 10%;
+    height: 50%;
+    width: 70%;
+    margin-left: 250px;
+
+}
+
+.home .share {
+    padding: 1rem 0;
+}
+
+.home .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.home .share a:hover {
+    background-color: var(--main-color);
+}
+
+.home .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.home .links a {
+    padding: .8rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+}
+
+.home .links a:hover {
+    background: var(--main-color);
+}
+
+
+.button3 {
+    border-radius: 30px;
+    background-color: goldenrod;
+    box-shadow: 0 0px 1px 0 goldenrod, 0 1px 27px 0 goldenrod;
+    margin-top: 20px;
+    padding: 0px 30px;
+    color: white;
+    height: 6vh
+}
+
+
+
+
+#home4 {
+    margin: 20vh auto;
+    text-align: center;
+}
+
+#home4 h1 {
+    font-size: 6rem;
+    color: grey;
+
+}
+
+#content4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 9px 50px;
+    text-align: center;
+}
+
+#content4 .cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.863);
+    border: 2px solid orange;
+    font-size: 2vw;
+    height: 30vw;
+    border-radius: 14px;
+    transition: 1ms;
+    transition: ease-in;
+
+}
+
+#content4 .cards h5 {
+    color: black;
+    font-size: 2rem;
+}
+
+#content4 .cards a {
+    color: white;
+    background-color: black;
+    border: 2px solid goldenrod;
+    padding: 10px 30px;
+
+}
+
+
+#content4 .cards:hover {
+    top: -20px;
+}
+
+
+#home5 {
+    margin: 25vh auto;
+    text-align: center;
+}
+
+#home5 h1 {
+    font-size: 4rem;
+    color: grey;
+}
+
+.button4 {
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+
+
+
+#home7 {
+    margin-top: 10vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+
+}
+
+#content7 h1 {
+    font-size: 3rem;
+    color: grey;
+}
+
+#content7 {
+    padding-left: 5vw;
+    text-align: left;
+    padding-top: 10vh;
+}
+
+#content8 {
+    padding-left: 10vw;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 2fr 2fr 4fr 2fr 10fr;
+}
+
+#content8 input {
+    width: 25vw;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+#home6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content6 {
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 55vw;
+    background-color: goldenrod;
+    border: 5px solid grey;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.button5 {
+    color: black;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+#content6 img {
+    border-radius: 100%;
+    height: 20vw;
+}
+
+#foot {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: goldenrod;
+    height: 40vh;
+
+}
+
+
+.share2 a {
+
+    margin: 30px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+
+}
+
+.button1:focus,
+.button2:focus,
+.button3:focus,
+.button4:focus,
+.button5:focus {
+    outline: none;
+}
